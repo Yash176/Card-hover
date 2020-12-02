@@ -1,0 +1,132 @@
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    background: #161625;
+    height: 100vh;
+    width: 100%;
+}
+.circle1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(20% at 8% 20%);
+    background: #378AE5;
+    
+}
+.circle2{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(30% at 90% 80%);
+    background: #FF0089;
+}
+.container{
+    position: relative;
+    top: 10%;
+    /* left: 10%;
+    right: 10%; */
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 250px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+    border-radius: 5px;
+    background: #14141657;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    opacity: 0.5;
+    transition: 0.1s;
+    
+}
+.card:hover{
+    opacity: 1;
+    transform: translateY(-10px);
+}
+.card:hover .lg1 ul li{
+    opacity: 1;
+    transform: translateY(-10px);
+    visibility: visible;
+}
+img{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+
+.adj1, .adj2, .adj3{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 10vw;
+    height: 20vh;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px ridge rgb(80, 78, 76);
+}
+.txt1, .txt2, .txt3{
+    color: antiquewhite;
+    text-align: center;
+}
+.lg1, .lg2, .lg3{
+    /* background-color: aqua; */
+    /* visibility: hidden; */
+}
+.lg1 ul, .lg2 ul, .lg3 ul{
+    display: flex;
+    /* visibility: hidden; */
+    list-style: none;
+    
+
+}
+.lg1 ul li, .lg2 ul li, .lg3 ul li{
+    width: 40px;
+    position: relative;
+    margin: 10px;
+    height: 40px;
+    padding: 5px;
+    background-color: black;
+    border-radius: 50%;
+    visibility: hidden;
+    transition: 0.2s;
+    
+
+
+}
+
+.lg1 ul li img, .lg2 ul li img, .lg3 ul li img{
+    position: relative;
+    filter: invert(1);
+    object-fit: contain;
+    transition: 0.2s;
+    
+
+}
